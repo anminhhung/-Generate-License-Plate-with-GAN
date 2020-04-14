@@ -27,10 +27,10 @@ tf.flags.DEFINE_float('pool_size', 50,
 tf.flags.DEFINE_integer('ngf', 64,
                         'number of gen filters in first conv layer, default: 64')
 
-tf.flags.DEFINE_string('X', 'data/tfrecords/licenseA.tfrecords',
-                       'X tfrecords file for training, default: data/tfrecords/licenseA.tfrecords')
-tf.flags.DEFINE_string('Y', 'data/tfrecords/licenseB.tfrecords',
-                       'Y tfrecords file for training, default: data/tfrecords/licenseB.tfrecords')
+tf.flags.DEFINE_string('X', 'data/tfrecords/trainA.tfrecords',
+                       'X tfrecords file for training, default: data/tfrecords/trainA.tfrecords')
+tf.flags.DEFINE_string('Y', 'data/tfrecords/trainB.tfrecords',
+                       'Y tfrecords file for training, default: data/tfrecords/trainB.tfrecords')
 tf.flags.DEFINE_string('load_model', None,
                         'folder of saved model that you wish to continue training (e.g. 20170602-1936), default: None')
 
